@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #333333;
+  height: 100vh;
+  font-family: "Poppins";
+  color: white;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+}
+
+.wrap {
+  position: relative;
+  animation: muter 300s linear infinite 4s;
+  transition: all 800ms ease-in-out;
+}
+@keyframes muter {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wrap .tengah {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(156.22deg, #f9ea9b 13.13%, #b89e17 95.43%);
+  border-radius: 100%;
+  animation: tengah 2s ease-in-out alternate;
+}
+@keyframes tengah {
+  0% {
+    transform: scale(0%);
+  }
+  50% {
+    transform: scale(120%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.wrap .kelopak-1 {
+  position: absolute;
+  top: -200px;
+  left: 7%;
+  border-radius: 100%;
+  z-index: -10;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transform: scale(0%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-2 {
+  position: absolute;
+  right: -120px;
+  top: -155px;
+  transform: rotate(0deg) scale(0%);
+  border-radius: 100%;
+  z-index: -20;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-3 {
+  position: absolute;
+  right: -200px;
+  top: -7%;
+  border-radius: 100%;
+  transform: rotate(45deg) scale(0%);
+  z-index: -30;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-4 {
+  position: absolute;
+  right: -120px;
+  bottom: -155px;
+  transform: rotate(90deg) scale(0%);
+  border-radius: 100%;
+  z-index: -40;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-5 {
+  position: absolute;
+  bottom: -200px;
+  left: 7%;
+  transform: rotate(120deg) scale(0%);
+  border-radius: 100%;
+  z-index: -50;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-6 {
+  position: absolute;
+  left: -120px;
+  bottom: -155px;
+  transform: rotate(-180deg) scale(0%);
+  border-radius: 100%;
+  z-index: -60;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-7 {
+  position: absolute;
+  left: -200px;
+  top: -7%;
+  border-radius: 100%;
+  transform: rotate(-120deg) scale(0%);
+  z-index: -70;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+.wrap .kelopak-8 {
+  position: absolute;
+  left: -120px;
+  top: -155px;
+  transform: rotate(-90deg) scale(0%);
+  border-radius: 100%;
+  z-index: -80;
+  height: 300px;
+  width: 215px;
+  background: linear-gradient(165.73deg, #c7009b 10.14%, #d20f0f 106.86%);
+  transition: all 800ms ease-in-out;
+}
+
+a {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(126.81deg, #c7009b 20.36%, #2953a6 91.17%);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 8px #2953a6);
+  transition: all 300ms ease-in-out;
+}
+a:hover {
+  transform: scale(120%);
+  filter: drop-shadow(0px 4px 32px #c7009b);
+}

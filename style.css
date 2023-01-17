@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #333333;
+  height: 100vh;
+  font-family: "Poppins";
+  color: white;
+  overflow: hidden;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row-title-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 32px;
+  transform: translateY(120px);
+}
+h2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 0px 0px 28px #c7009b;
+}
+h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c7009b, 0 0 40px #c7009b, 0 0 50px #c7009b, 0 0 60px #c7009b, 0 0 70px #c7009b;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c7009b, 0 0 40px #c7009b, 0 0 50px #c7009b, 0 0 60px #c7009b, 0 0 70px #c7009b, 0 0 80px #c7009b;
+  }
+}
+
+.depan {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.4em;
+}
+
+.depan :nth-child(1) {
+  animation: kedap-kedip 1s ease-in-out infinite alternate 0s;
+}
+.depan :nth-child(2) {
+  animation: kedap-kedip 1s ease-in-out infinite alternate 0.2s;
+}
+.depan :nth-child(3) {
+  animation: kedap-kedip 1s ease-in-out infinite alternate 0.4s;
+}
+.depan :nth-child(4) {
+  animation: kedap-kedip 1s ease-in-out infinite alternate 0.6s;
+}
+
+@keyframes kedap-kedip {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100px;
+  }
+}
+
+.belakang {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.4em;
+}
+
+.belakang :nth-child(1) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0s;
+}
+.belakang :nth-child(2) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.1s;
+}
+.belakang :nth-child(3) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.2s;
+}
+.belakang :nth-child(4) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.3s;
+}
+.belakang :nth-child(5) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.4s;
+}
+.belakang :nth-child(6) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.5s;
+}
+.belakang :nth-child(7) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.6s;
+}
+.belakang :nth-child(8) {
+  animation: jedag-jedug 1.5s ease-in-out infinite alternate 0.7s;
+}
+
+@keyframes jedag-jedug {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.row-title-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 90px;
+}
+.depan-2 {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.4em;
+  box-sizing: content-box;
+}
+.belakang-2 {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.4em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.wrap-p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.wrap-p .icon {
+  fill: white;
+  animation: naik-turun 1500ms ease-in-out infinite;
+}
+@keyframes naik-turun {
+  0% {
+    transform: translate(0px, -3px);
+  }
+  50% {
+    transform: translate(0px, 3px);
+  }
+  100% {
+    transform: translate(0px, -3px);
+  }
+}
+.wrap-p p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.assign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-90px);
+  gap: 16px;
+}
+
+.assign a {
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(126.81deg, #c7009b 20.36%, #2953a6 91.17%);
+  border-radius: 32px;
+  filter: drop-shadow(0px 4px 8px #2953a6);
+  transition: all 300ms ease-in-out;
+}
+.assign a:hover {
+  transform: scale(110%) translateY(-5px);
+  filter: drop-shadow(0px 0px 18px #7098e7);
+}
